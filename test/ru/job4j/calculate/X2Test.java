@@ -1,9 +1,9 @@
 package ru.job4j.calculate;
 
-import static org.junit.Assert.assertThat;
-import static org.hamcrest.Matchers.is;
-
 import org.junit.Test;
+
+import static org.hamcrest.Matchers.is;
+import static org.junit.Assert.assertThat;
 
 public class X2Test {
 
@@ -37,6 +37,7 @@ public class X2Test {
         int rsl = X2.calc(a, b, c, x);
         /* сравнение полученного значения с ожидаемым */
         assertThat(rsl, is(expected));
+
     }
     @Test
     public void whenACOne() {
