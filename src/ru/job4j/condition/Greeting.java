@@ -12,3 +12,4 @@ public class Greeting {
         System.out.println(idea2);
     }
 }
+ 
