@@ -1,0 +1,64 @@
+Index: src/ru/job4j/loop/Fitness.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/ru/job4j/loop/Fitness.java	(revision 3fc829acb27175eadcf6193ce5b44bd98240258b)
++++ src/ru/job4j/loop/Fitness.java	(date 1614691641787)
+@@ -3,11 +3,11 @@
+ public class Fitness {
+     public static int calc(int ivan, int nik) {
+         int month = 0;
+-        while (ivan <= nik ) {
++        while (ivan <= nik){
+ 
+             ivan *= 3;
+             nik *= 2;
+-   month ++;
++   month++;
+         }
+         return month;
+         }
+Index: test/ru/job4j/loop/MortgageTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- test/ru/job4j/loop/MortgageTest.java	(date 1614694462022)
++++ test/ru/job4j/loop/MortgageTest.java	(date 1614694462022)
+@@ -0,0 +1,20 @@
++package ru.job4j.loop;
++
++import org.junit.Test;
++
++import static org.hamcrest.Matchers.is;
++import static org.junit.Assert.*;
++
++public class MortgageTest {
++    @Test
++    public void when1Year() {
++        int year = Mortgage.year(1000, 1200, 1);
++        assertThat(year, is(1));
++    }
++
++    @Test
++    public void when2Year() {
++        int year = Mortgage.year(100, 120, 50);
++        assertThat(year, is(2));
++    }
++}
+\ No newline at end of file
+Index: src/ru/job4j/loop/Loop.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/ru/job4j/loop/Loop.java	(revision 3fc829acb27175eadcf6193ce5b44bd98240258b)
++++ src/ru/job4j/loop/Loop.java	(date 1614701745857)
+@@ -1,10 +1,0 @@
+-package ru.job4j.loop;
+-
+-public class Loop {
+-    public static void main(String[] args) {
+-        for (int i = 0; i < ; i++) {
+-            S
